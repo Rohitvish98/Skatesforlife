@@ -1,0 +1,285 @@
+/* ######## Defaults ########### */
+nav,header,footer{
+    display: block
+}
+
+body{
+    line-height: 1;
+    margin: 0
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background: linear-gradient(#868679,#505049)
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: ""
+}
+
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-12{width: 100%}
+
+.container1{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background-color: white
+}
+
+label{
+    font-size: 25px;
+    font-weight: 600
+}
+
+p{
+    font-size: 15px;
+    line-height: 20px
+}
+
+article p{
+    width: 100%;
+    font-size: 20px;
+    padding: 20px
+}
+
+/* ########### Nav bar ################# */
+nav{
+    line-height: 1;
+    margin: 0
+}
+
+nav ul{
+    background-color: lawngreen;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.topnav li{
+    list-style: none;
+    float: left;
+    text-align: center
+}
+
+.topnav li.topnav-right{
+    float: right
+}
+
+.topnav li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: purple
+}
+
+.topnav li a:hover{
+    background-color: gray;
+    color: white
+}
+
+.topnav li.dropdown{
+    display: none;
+}
+
+/*############### Customs #####################*/
+.col-6-one{
+    margin-left: 30%
+}
+
+.col-6-two{
+    margin-left: 10%
+}
+
+.text1{
+    font-family: "Anton",sans-serif;
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    line-height: 45px
+}
+
+form h2{
+    color: white
+}
+
+.inputbox{
+    font-size: 13px;
+    width: 300px;
+    min-width: 100px;
+    line-height: 8px;
+    padding: 5px;
+    border-radius: 5px
+}
+
+header h1{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: 130px;
+}
+
+header h1.headtext{
+    font-family: "Anton",sans-serif;
+    font-size: 40px;
+    font-weight:600
+}
+
+div.box{
+    text-align: center;
+    margin: 25px;
+    padding: 30px 40px 45px 40px;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1);
+    border-radius: 7px
+}
+
+div.learnmore{
+    display: block;
+    margin: 30px 
+}
+
+div.learnmore button{
+    font-size: 20px;
+    font-weight: 600;
+    color: purple;
+    background-color: lawngreen;
+    padding: 10px 30px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px
+}
+
+.icon{
+    width: 100%
+}
+
+img{
+    height: 100px;
+    width: 100px
+}
+
+.mlimg{
+    margin: auto;
+    padding: 15px 30px 50px 20px;
+}
+
+.mlimg img{
+    width: 500px;
+    height: 175px;
+    width: 100%;
+    box-shadow: -2px -2px 12px 2px rgba(0,0,0,0.15), 2px 2px 10px 2px rgba(0,0,0,1) 
+}
+
+footer{
+    background-color: #666;
+    padding-left: 8%
+}
+
+
+footer table tr td h1{
+    color: white;
+    font-size: 25px
+}
+
+footer table tr td p{
+    color: white;
+    font-size: 15px;
+    line-height: 1
+}
+
+/*############ Mobile ################# */
+@media screen and (max-width: 500px)
+{
+    .topnav li:not(:nth-child(1)){
+        display: none
+    }
+
+    .topnav li.dropdown{
+    display: block;
+    float: right
+    }
+
+    .topnav.respond li.dropdown{
+    position: absolute;
+    top: 0;
+    right: 0
+    }
+
+    .topnav.respond{
+    position: relative
+    }
+    
+    .topnav.respond li{
+    display: inline;
+    float: none
+    }
+
+    .topnav.respond li a{
+    display: block;
+    text-align: left
+    }
+    
+    header h1{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+    }
+
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4{
+    width: 100%;
+    margin: 0
+    }
+    
+    div.mlimg{
+        display: block;
+        margin: auto
+    }
+    
+    div.mlimg img{
+        width: 100%
+    }
+
+    .col-6-one,
+    .col-6-two{
+        margin: 20px
+    }
+
+    .col-6-two iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden
+    }
+    
+    footer table{
+        display: block;
+        width: 100%;
+        margin: 0
+    }
+}
+    
+
+
+

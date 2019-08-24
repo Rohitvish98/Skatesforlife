@@ -1,0 +1,42 @@
+h1{
+    color: rebeccapurple; border: 2px solid red; background: linear-gradient(#00b8e6, #99ebff); text-align: center; box-shadow: 5px 5px 5px black
+}
+h2{
+    color: #cc0000; text-shadow: 1px 1px 1px black 
+}
+h3{
+    color: rgb(255, 50, 100)
+}
+.container{
+    color: rebeccapurple; text-shadow: 1px 1px 1px blue
+}
+body{
+    background-image: url(download1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover 
+}
+.logo{
+    border: 5px dashed darkblue
+}
+.img{
+    height: 200px;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    opacity: .5
+}/* this is a good method of creating thumbnails in a website*/
+img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px
+}/*this ensures that there is no cutting of the image when the browser is shrinked by the user.*/
+.btn{
+    color: white;
+    background-color: red;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 15px;
+    display: block;
+    margin: auto
+}

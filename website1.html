@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>My first website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownclick">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li class="topnav-right"><a href="#signup">SIGN UP</a></li>
+            <li class="topnav-right"><a href="#signin">SIGN IN</a></li>
+            <li class="dropdown"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>
+        </ul>
+    </nav>    
+<script>
+    function dropdownmenu(){
+        var x= document.getElementById("dropdownclick");
+        if(x.className === "topnav")
+            {
+                x.className += " respond";
+                /*change topnav to topnav.respond*/
+            }
+        else{
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="col-6-one">
+                <h1 class="text1">Learn Smarter,</h1>
+                <h1 class="text1">Build Better.</h1>
+            </div>
+            <form>
+                <div class="col-6-one">
+                    <h2>Username</h2>
+                    <input class="inputbox" type="text" placeholder="Username">
+                    <h2>Password</h2>
+                    <input class="inputbox" type="text" placeholder="Password">
+                </div>
+            </form>
+        </div>
+        <div class="col-6">
+            <div class="col-6-two">
+                <iframe width="450" height="275" src="https://www.youtube.com/embed/c-Ekz2kK7J4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <h1 class="headtext">Your Journey To Awesomeness!</h1>
+</header>
+
+<div class="container1">
+    <div class="row">
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="website1logo.png">
+                </div>
+                <label>Chat with me</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                <img src="website1logo.png">
+                </div>
+                <label>Learn to code</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                <img src="website1logo.png">
+                </div>
+                <label>Build an Empire</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="learnmore">
+        <button>LEARN MORE</button>
+</div>
+    
+<div class="container2">
+    <div class="row">
+        <div class="col-7">
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+        </div>
+        <div class="mlimg">
+            <img src="ml.jpg">
+        </div>
+    </div>
+</div> 
+    
+<footer>
+        <table cellpadding="50">
+            <tr>
+                    <td>
+                        <h1>Company</h1>
+                        <p>About</p>
+                        <p>Blog</p>
+                        <p>Careers</p>
+                    </td>
+                    <td>
+                        <h1>Company</h1>
+                        <p>About</p>
+                        <p>Blog</p>
+                        <p>Careers</p>
+                    </td>
+                    <td>
+                        <h1>Company</h1>
+                        <p>About</p>
+                        <p>Blog</p>
+                        <p>Careers</p>
+                    </td>
+                    <td>
+                        <h1>Company</h1>
+                        <p>About</p>
+                        <p>Blog</p>
+                        <p>Careers</p>
+                    </td>
+                    <td>
+                        <h1>Company</h1>
+                        <p>About</p>
+                        <p>Blog</p>
+                        <p>Careers</p>
+                    </td>
+            </tr>
+        </table>
+</footer>
+    
+</body>
+</html>
